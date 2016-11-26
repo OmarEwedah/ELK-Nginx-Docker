@@ -5,12 +5,13 @@ MAINTAINER Omar Ewedah "omar.ewedah@gmail.com"
 ### install Filebeat
 
 RUN apt-get update \
+ && apt-get -y install curl \
  && apt-get -y install wget \
  && apt-get -y install apt-transport-https \
  && echo "deb https://packages.elastic.co/beats/apt stable main" |  tee -a /etc/apt/sources.list.d/beats.list \
  && wget -qO - https://packages.elastic.co/GPG-KEY-elasticsearch |  apt-key add - \
  && apt-get update \
- && apt-get install filebeat 
+ && apt-get install filebeat
 
 
 

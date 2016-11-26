@@ -13,6 +13,12 @@ RUN apt-get update \
  && apt-get update \
  && apt-get install filebeat
 
+RUN truncate -s 1k /usr/share/nginx/html/test.html \
+ && truncate -s 1k /usr/share/nginx/html/test.jpg \
+ && truncate -s 1k /usr/share/nginx/html/test.css \
+ && truncate -s 1k /usr/share/nginx/html/test.js
+ADD nginx.conf /etc/nginx/nginx.conf
+ADD default.conf /etc/nginx/conf.d/default.conf
 
 
 # remove log symlinks

@@ -54,6 +54,7 @@ RUN apt-get install -y supervisor
 ADD beats-dashboards-1.1.0/ /
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD start.sh /usr/local/bin/start.sh
+RUN chmod +x /load.sh
 RUN chmod +x /usr/local/bin/start.sh
 CMD ["/usr/bin/supervisord"]
 EXPOSE 9200 5601 5044 4560/udp

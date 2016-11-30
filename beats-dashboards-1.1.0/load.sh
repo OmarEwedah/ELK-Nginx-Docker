@@ -8,7 +8,7 @@
 sleep 7
 
 # The default value of the variable. Initialize your own variables here
-ELASTICSEARCH=http://localhost:9200
+ELASTICSEARCH=http://172.17.0.1:9200
 CURL=curl
 KIBANA_INDEX=".kibana"
 

@@ -34,7 +34,7 @@ ADD filebeat.yml /etc/filebeat/filebeat.yml
 RUN mkdir -p /etc/pki/tls/certs
 ADD logstash-forwarder.crt /etc/pki/tls/certs/logstash-forwarder.crt
 
-EXPOSE 80
+EXPOSE 80 5044
 
 ###### start service
 ADD ./start.sh /usr/local/bin/start.sh

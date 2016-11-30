@@ -5,6 +5,7 @@
 # ./load.sh http://test.com:9200
 # ./load.sh http://test.com:9200 test
 
+sleep 7
 
 # The default value of the variable. Initialize your own variables here
 ELASTICSEARCH=http://localhost:9200

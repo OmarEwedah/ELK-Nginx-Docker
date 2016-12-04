@@ -81,7 +81,7 @@ The nginx configuration is stored in `/etc/nginx/nginx.conf`.
 
 The nginx caching configuration is stored in `/etc/nginx/conf.d/default.conf`.
 
-## How configure Filebeat? * [filebeat](https://www.elastic.co/products/beats/filebeat)
+## How configure Filebeat?  [filebeat](https://www.elastic.co/products/beats/filebeat)
 
 The filebeat configuration is stored in `/etc/filebeat/filebeat.yml`.
 
